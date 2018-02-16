@@ -37,7 +37,10 @@ set(CPP_LESSONS_SOURCES
         cpp_lessons/lesson31.h
         cpp_lessons/lesson33.h
         cpp_lessons/lesson32.h
-        cpp_lessons/lesson34.h)
+        cpp_lessons/lesson34.h
+        cpp_lessons/lesson35.h
+        cpp_lessons/lesson36.h
+        cpp_lessons/lesson37.h)
 
 include_directories(cpp_lessons)
 

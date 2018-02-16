@@ -19,35 +19,23 @@
 
 #include <iostream>
 
-namespace Lessons::Lesson1 {
-    class A {
-    public:
-        explicit A(int n = 0) : m(n) {
-            std::cout << "d";
+namespace Lessons::Lesson37 {
+
+    void main() {
+        int n = 8;
+        bool res[n];
+        res[0] = 0 == 0U;
+        res[1] = -1 < 0;
+        res[2] = -1 < 0U;
+        res[3] = 2147483647 > -2147483647 - 1;
+        res[4] = 2147483647U > -2147483647 - 1;
+        res[5] = 2147483647 > (int) 2147483648U;
+        res[6] = -1 > -2;
+        res[7] = (unsigned) -1 > -2;
+
+        for (uint8_t i = 0; i < n; ++i) {
+            std::cout << std::boolalpha << res[i] << std::endl;
         }
 
-        A(const A &rhs) : m(rhs.m) {
-            std::cout << "c";
-        }
-
-    private:
-        int m;
-    };
-
-    void f(const A &a1, const A &a2 = A()) {
-
-    }
-
-    int main(void) {
-        A a(2), b;
-        const A c(a), &d = c, e = b;
-        b = d;
-        A *p = new A(c), *q = &a;
-        static_cast<void>(q);
-        delete p;
-
-        std::cout << std::endl;
-
-        return 0;
     }
 }

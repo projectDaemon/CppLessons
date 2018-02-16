@@ -17,37 +17,23 @@
  */
 #pragma once
 
-#include <iostream>
+#include <cstdio>
+#include <cstdlib>
 
-namespace Lessons::Lesson1 {
-    class A {
-    public:
-        explicit A(int n = 0) : m(n) {
-            std::cout << "d";
+namespace Lessons::Lesson36 {
+    void mystery(int *x, int *y) {
+        if (*x != *y) {
+            *y = *x ^ *y;
+            *x = *x ^ *y;
+            *y = *x ^ *y;
         }
-
-        A(const A &rhs) : m(rhs.m) {
-            std::cout << "c";
-        }
-
-    private:
-        int m;
-    };
-
-    void f(const A &a1, const A &a2 = A()) {
-
     }
 
-    int main(void) {
-        A a(2), b;
-        const A c(a), &d = c, e = b;
-        b = d;
-        A *p = new A(c), *q = &a;
-        static_cast<void>(q);
-        delete p;
-
-        std::cout << std::endl;
-
-        return 0;
+    void main() {
+        int x = 100;
+        int y = 5;
+        std::printf("x:%d, y:%d\n",x,y);
+        mystery(&x,&y);
+        std::printf("x:%d, y:%d\n",x,y);
     }
 }

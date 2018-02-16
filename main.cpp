@@ -32,11 +32,9 @@
 #include <lesson32.h>
 #include <lesson33.h>
 #include <lesson34.h>
-
-//#include <__config>
-
-//#include <new>
-//#include <thread>
+#include <lesson35.h>
+#include <lesson36.h>
+#include <lesson37.h>
 
 int main()
 {
@@ -74,6 +72,9 @@ int main()
     Lessons::Lesson32::main();
     Lessons::Lesson33::main();
     Lessons::Lesson34::main();
+    Lessons::Lesson35::main();
+    Lessons::Lesson36::main();
+    Lessons::Lesson37::main();
 
     return 0;
 }

@@ -18,36 +18,17 @@
 #pragma once
 
 #include <iostream>
+#include <vector>
 
-namespace Lessons::Lesson1 {
-    class A {
-    public:
-        explicit A(int n = 0) : m(n) {
-            std::cout << "d";
+namespace Lessons::Lesson35 {
+
+    void main() {
+        std::vector<int> v = {1, 3, -5, -7, -3};
+        int sum = 0;
+        for (int el : v) {
+            sum += el;
         }
-
-        A(const A &rhs) : m(rhs.m) {
-            std::cout << "c";
-        }
-
-    private:
-        int m;
-    };
-
-    void f(const A &a1, const A &a2 = A()) {
-
-    }
-
-    int main(void) {
-        A a(2), b;
-        const A c(a), &d = c, e = b;
-        b = d;
-        A *p = new A(c), *q = &a;
-        static_cast<void>(q);
-        delete p;
-
-        std::cout << std::endl;
-
-        return 0;
+        std::cout << sum << std::endl;
+        std::cout << sum / v.size() << std::endl;
     }
 }
