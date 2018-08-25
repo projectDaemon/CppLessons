@@ -36,7 +36,7 @@ namespace Lessons::Lesson23 {
         const int m_n;
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         try {
             A a(1);
             A b(0);

@@ -58,7 +58,7 @@ namespace Lessons::Lesson17 {
             : public C, public D {
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         E e;
         C &c = e;
         D &d = e;

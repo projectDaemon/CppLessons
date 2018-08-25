@@ -44,7 +44,7 @@ namespace Lessons::Lesson4 {
         char m_c;
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         C c;
         A *pa = &c;
         B *pb = &c;

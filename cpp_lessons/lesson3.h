@@ -45,7 +45,7 @@ namespace Lessons::Lesson3 {
         A m_a2;
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         { B b(5); }
 
         std::cout << std::endl;

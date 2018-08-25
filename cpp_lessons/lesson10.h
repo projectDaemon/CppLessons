@@ -46,7 +46,7 @@ namespace Lessons::Lesson10 {
 
     int Int::m_assignments = 0;
 
-    int main() {
+    int main(int argc, char *argv[]) {
         std::list<Int> l({Int(3), Int(1)});
         l.sort();
         std::cout << (Int::get_assignments() > 0 ? 1 : 0);

@@ -21,7 +21,7 @@
 
 namespace Lessons::Lesson37 {
 
-    void main() {
+    void main(int argc, char *argv[]) {
         int n = 8;
         bool res[n];
         res[0] = 0 == 0U;

@@ -38,7 +38,7 @@ namespace Lessons::Lesson1 {
 
     }
 
-    int main(void) {
+    int main(int argc, char *argv[]) {
         A a(2), b;
         const A c(a), &d = c, e = b;
         b = d;

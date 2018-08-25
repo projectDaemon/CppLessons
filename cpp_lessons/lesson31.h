@@ -41,7 +41,7 @@ namespace Lessons::Lesson31 {
         ~C() { std::cout << "~C" << std::endl; }
     };
 
-    void main() {
+    void main(int argc, char *argv[]) {
         std::shared_ptr <A> x = std::make_shared<B>();
         std::unique_ptr <A> y = std::make_unique<C>();
     }

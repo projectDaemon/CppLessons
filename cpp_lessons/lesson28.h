@@ -35,7 +35,7 @@ namespace Lessons::Lesson28 {
         A() { std::cout << 'A'; }
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         { A<4>(); }
 
         std::cout << std::endl;

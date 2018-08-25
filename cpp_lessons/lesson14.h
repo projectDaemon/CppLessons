@@ -44,7 +44,7 @@ namespace Lessons::Lesson14 {
 
     A g(const A a) { return a; }
 
-    int main() {
+    int main(int argc, char *argv[]) {
         A a(3);
         A b = a;
         std::cout << A::m_assignment_calls;

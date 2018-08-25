@@ -26,7 +26,7 @@ namespace Lessons::Lesson32 {
         void foo() && { std::cout << "rvalue" << std::endl; }
     };
 
-    void main() {
+    void main(int argc, char *argv[]) {
         Foo foo;
         foo.foo(); // Prints "lvalue"
         Foo().foo(); // Prints "rvalue"

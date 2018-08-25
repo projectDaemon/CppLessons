@@ -34,7 +34,7 @@ namespace Lessons::Lesson16 {
         int shift(int n = 3) const { return n << 3; }
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         const D d;
         const B *b = &d;
 

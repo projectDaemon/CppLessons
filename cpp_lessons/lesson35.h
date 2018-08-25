@@ -22,7 +22,7 @@
 
 namespace Lessons::Lesson35 {
 
-    void main() {
+    void main(int argc, char *argv[]) {
         std::vector<int> v = {1, 3, -5, -7, -3};
         int sum = 0;
         for (int el : v) {

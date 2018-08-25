@@ -36,45 +36,134 @@
 #include <lesson36.h>
 #include <lesson37.h>
 
-int main()
+int main(int argc, char *argv[])
 {
-    Lessons::Lesson1::main();
-    Lessons::Lesson2::main();
-    Lessons::Lesson3::main();
-    Lessons::Lesson4::main();
-    Lessons::Lesson5::main();
-    Lessons::Lesson6::main();
-    Lessons::Lesson7::main();
-    Lessons::Lesson8::main();
-    Lessons::Lesson9::main();
-    Lessons::Lesson10::main();
-    Lessons::Lesson11::main();
-    Lessons::Lesson12::main();
-    Lessons::Lesson13::main();
-    Lessons::Lesson14::main();
-    Lessons::Lesson15::main();
-    Lessons::Lesson16::main();
-    Lessons::Lesson17::main();
-    Lessons::Lesson18::main();
-    Lessons::Lesson19::main();
-    Lessons::Lesson20::main();
-    Lessons::Lesson21::main();
-    Lessons::Lesson22::main();
-    Lessons::Lesson23::main();
-    Lessons::Lesson24::main();
-    Lessons::Lesson25::main();
-    Lessons::Lesson26::main();
-    Lessons::Lesson27::main();
-    Lessons::Lesson28::main();
-    Lessons::Lesson29::main();
-    Lessons::Lesson30::main();
-    Lessons::Lesson31::main();
-    Lessons::Lesson32::main();
-    Lessons::Lesson33::main();
-    Lessons::Lesson34::main();
-    Lessons::Lesson35::main();
-    Lessons::Lesson36::main();
-    Lessons::Lesson37::main();
+    if (argc != 2)
+    {
+        std::cout << "invalid param counter" << std::endl;;
+	    return 1;
+    }
+    
+    int lessonNumber = std::atoi(argv[1]);
+    std::cout << "lesson number " << lessonNumber << std::endl;
+
+    switch (lessonNumber)
+    {
+        case 1:
+            Lessons::Lesson1::main(argc, argv);
+            break;
+        case 2: 
+            Lessons::Lesson2::main(argc, argv);
+            break;
+        case 3:
+            Lessons::Lesson3::main(argc, argv);
+            break;
+        case 4:
+            Lessons::Lesson4::main(argc, argv);
+            break;
+        case 5:
+            Lessons::Lesson5::main(argc, argv);
+            break;
+        case 6:
+            Lessons::Lesson6::main(argc, argv);
+            break;
+        case 7:
+            Lessons::Lesson7::main(argc, argv);
+            break;
+        case 8:
+            Lessons::Lesson8::main(argc, argv);
+            break;
+        case 9:
+            Lessons::Lesson9::main(argc, argv);
+            break;
+        case 10:
+            Lessons::Lesson10::main(argc, argv);
+            break;
+        case 11:
+            Lessons::Lesson11::main(argc, argv);
+            break;
+        case 12:
+            Lessons::Lesson12::main(argc, argv);
+            break;
+        case 13:
+            Lessons::Lesson13::main(argc, argv);
+            break;
+        case 14:
+            Lessons::Lesson14::main(argc, argv);
+            break;
+        case 15:
+            Lessons::Lesson15::main(argc, argv);
+            break;
+        case 16:
+            Lessons::Lesson16::main(argc, argv);
+            break;
+        case 17:
+            Lessons::Lesson17::main(argc, argv);
+            break;
+        case 18:
+            Lessons::Lesson18::main(argc, argv);
+            break;
+        case 19:
+            Lessons::Lesson19::main(argc, argv);
+            break;
+        case 20:
+            Lessons::Lesson20::main(argc, argv);
+            break;
+        case 21:
+            Lessons::Lesson21::main(argc, argv);
+            break;
+        case 22:
+            Lessons::Lesson22::main(argc, argv);
+            break;
+        case 23:
+            Lessons::Lesson23::main(argc, argv);
+            break;
+        case 24:
+            Lessons::Lesson24::main(argc, argv);
+            break;
+        case 25:
+            Lessons::Lesson25::main(argc, argv);
+            break;
+        case 26:
+            Lessons::Lesson26::main(argc, argv);
+            break;
+        case 27:
+            Lessons::Lesson27::main(argc, argv);
+            break;
+        case 28:
+            Lessons::Lesson28::main(argc, argv);
+            break;
+        case 29:
+            Lessons::Lesson29::main(argc, argv);
+            break;
+        case 30:
+            Lessons::Lesson30::main(argc, argv);
+            break;
+        case 31:
+            Lessons::Lesson31::main(argc, argv);
+            break;
+        case 32:
+            Lessons::Lesson32::main(argc, argv);
+            break;
+        case 33:
+            Lessons::Lesson33::main(argc, argv);
+            break;
+        case 34:
+            Lessons::Lesson34::main(argc, argv);
+            break;
+        case 35:
+            Lessons::Lesson35::main(argc, argv);
+            break;
+        case 36:
+            Lessons::Lesson36::main(argc, argv);
+            break;
+        case 37:
+            Lessons::Lesson37::main(argc, argv);
+            break;
+        default:
+            std::cout << "Invalid lesson number" << std::endl;
+            return 1;
+    }
 
     return 0;
 }

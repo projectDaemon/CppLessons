@@ -39,7 +39,7 @@ namespace Lessons::Lesson9 {
         void f(int n) const { std::cout << n + 1; }
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         const A a;
         B b;
         A &c = b;

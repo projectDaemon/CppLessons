@@ -31,7 +31,7 @@ namespace Lessons::Lesson11
         }
     };
 
-    int main()
+    int main(int argc, char *argv[])
     {
         std::list<int> l({ 5, 2, 6, 1, 13, 9, 19 });
         std::cout << l.size();

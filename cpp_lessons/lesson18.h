@@ -28,7 +28,7 @@ namespace Lessons::Lesson18 {
         }
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         std::set<int> x({4, 2, 7, 11, 12, 14, 17, 2});
         std::cout << x.size();
         std::set<int, C> y(x.begin(), x.end());

@@ -39,7 +39,7 @@ namespace Lessons::Lesson12 {
         return f(n - 1) * n / (n - 1);
     }
 
-    int main() {
+    int main(int argc, char *argv[]) {
         try {
             int r = f(3);
             A a(r);

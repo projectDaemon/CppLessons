@@ -41,7 +41,7 @@ namespace Lessons::Lesson20 {
         static A m_c;
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         B b(2);
 
         std::cout << std::endl;

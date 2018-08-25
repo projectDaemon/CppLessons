@@ -56,7 +56,7 @@ namespace Lessons::Lesson34 {
         std::cout << b->a << std::endl;
     }
 
-    void main(void) {
+    void main(int argc, char *argv[]) {
         B *b2 = new B(5);
         B b1(5);
 

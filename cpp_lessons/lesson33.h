@@ -18,7 +18,7 @@
 #pragma once
 
 namespace Lessons::Lesson33 {
-    void main() {
+    void main(int argc, char *argv[]) {
         int a = 10;
         const int *p1 = &a; // pointer to constant type
         int const *p2 = &a; // pointer to constant type

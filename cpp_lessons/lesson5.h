@@ -24,7 +24,7 @@
 #include <list>
 
 namespace Lessons::Lesson5 {
-    int main() {
+    int main(int argc, char *argv[]) {
         typedef std::list<int> L;
         L l(5);
 

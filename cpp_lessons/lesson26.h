@@ -27,7 +27,7 @@ namespace Lessons::Lesson26 {
         return a % 2 == b % 2;
     }
 
-    int main()
+    int main(int argc, char *argv[])
     {
         int a[] = {3, 1, 4, 6, 1, 3};
         auto b = std::begin(a);

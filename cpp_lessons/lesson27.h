@@ -34,7 +34,7 @@ namespace Lessons::Lesson27 {
 
     int A::m_object_id = 0;
 
-    int main() {
+    int main(int argc, char *argv[]) {
         A *const p = new A[2];
         A *const q = reinterpret_cast<A *const>(new char[2 * sizeof(A)]);
 

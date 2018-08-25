@@ -42,7 +42,7 @@ namespace Lessons::Lesson2 {
         virtual int f() const { return m_n + 1; }
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         const A a(1);
         const B b(3);
         const A *x[2] = {&a, &b};

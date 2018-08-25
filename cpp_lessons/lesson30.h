@@ -26,7 +26,7 @@ namespace Lessons::Lesson30 {
         return a % 3 < b % 3;
     }
 
-    int main() {
+    int main(int argc, char *argv[]) {
         typedef std::vector<int> V;
         V v({7, 0, 8, 5, 2, 11});
 

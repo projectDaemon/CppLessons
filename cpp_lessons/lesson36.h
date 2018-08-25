@@ -29,7 +29,7 @@ namespace Lessons::Lesson36 {
         }
     }
 
-    void main() {
+    void main(int argc, char *argv[]) {
         int x = 100;
         int y = 5;
         std::printf("x:%d, y:%d\n",x,y);

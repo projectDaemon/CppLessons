@@ -33,7 +33,7 @@ namespace Lessons::Lesson7 {
         static const int m_value = B<(t > T())>::m_n - B<(t < T())>::m_n;
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         std::cout << A<int, -9>::m_value
                   << A<bool, true>::m_value
                   << A<char>::m_value << std::endl;

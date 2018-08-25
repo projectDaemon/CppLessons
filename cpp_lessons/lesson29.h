@@ -30,7 +30,7 @@ namespace Lessons::Lesson29 {
         }
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         A *p0 = nullptr, *p1 = nullptr, *p2 = nullptr;
         try {
             p1 = new A(1);

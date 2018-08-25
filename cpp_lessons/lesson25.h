@@ -34,7 +34,7 @@ namespace Lessons::Lesson25 {
             : public A {
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         try {
             B b;
             C c;

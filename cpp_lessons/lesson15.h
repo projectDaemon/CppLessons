@@ -39,7 +39,7 @@ namespace Lessons::Lesson15 {
     int A::m_copy_ctor_calls = 0;
     int A::m_dtor_calls = 0;
 
-    int main() {
+    int main(int argc, char *argv[]) {
         A *p = nullptr;
         {
             const A a = 2;

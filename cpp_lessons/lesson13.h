@@ -43,7 +43,7 @@ namespace Lessons::Lesson13 {
         return a.m_i;
     }
 
-    int main() {
+    int main(int argc, char *argv[]) {
         A f(2), g(3);
 
         std::cout << f(1) << g(f) << std::endl;

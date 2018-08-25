@@ -73,7 +73,7 @@ namespace Lessons::Lesson19 {
 
     int *C::m_c = nullptr;
 
-    int main() {
+    int main(int argc, char *argv[]) {
         std::vector<A *> v({new C, new B, new A});
         std::stable_sort(v.begin(), v.end(), A::compare);
         std::for_each(v.begin(), v.end(), std::mem_fn(&A::f));

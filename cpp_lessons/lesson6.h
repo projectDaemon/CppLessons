@@ -76,7 +76,7 @@ namespace Lessons::Lesson6 {
         int m_x;
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         A a;
         B b;
         C c;

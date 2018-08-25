@@ -32,7 +32,7 @@ namespace Lessons::Lesson22 {
         }
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         P p[] = {P(new int(1)), P(new int(0)), P(nullptr), P(new int(2)), P()};
         auto b = std::begin(p);
         auto e = std::end(p);

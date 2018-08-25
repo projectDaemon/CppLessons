@@ -39,7 +39,7 @@ namespace Lessons::Lesson21 {
         virtual void f() const { std::cout << 2; }
     };
 
-    int main() {
+    int main(int argc, char *argv[]) {
         const A *a = new B;
         delete a;
 
